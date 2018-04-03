@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Firebase.Auth;
-public class UyelikSistemi : MonoBehaviour {
+public class AuthFire : MonoBehaviour {
     
     public Text log;
     FirebaseAuth auth;
-   public  InputField email;
+    public  InputField email;
     public InputField password;
     void Start () {
-   auth  = Firebase.Auth.FirebaseAuth.DefaultInstance;	
+    auth  = Firebase.Auth.FirebaseAuth.DefaultInstance;	
 	}
 	void Update () {
         logtut();
